@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../CSS/main.css?ver=3.5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- TOASTR CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+
+    <!-- DATATABLE CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/jszip-2.5.0/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.3/kt-2.7.0/r-2.3.0/rr-1.2.8/sc-2.0.6/sb-1.3.3/sp-2.0.1/datatables.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/jszip-2.5.0/dt-1.12.1/b-2.2.3/b-colvis-2.2.3/b-html5-2.2.3/b-print-2.2.3/cr-1.5.6/date-1.1.2/fc-4.1.0/fh-3.2.3/kt-2.7.0/r-2.3.0/rr-1.2.8/sc-2.0.6/sb-1.3.3/sp-2.0.1/datatables.min.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script src="../JS/main.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <!-- TOASTR SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
+    <title>TRAVEL</title>
+
+
+
+    <style>
+        /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+        
+        #header {
+            top: -12px;
+            border-radius: 0px;
+            height: 60px;
+            z-index: 997;
+            transition: all 0.5s;
+            padding: 10px 0;
+            background: white;
+        }
+        
+        #header .logo h1 {
+            font-size: 28px;
+            margin: 0px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+        
+        #header .logo h1 a,
+        #header .logo h1 a:hover {
+            color: var(--textSecondary);
+            text-decoration: none;
+        }
+        
+        #header .logo img {
+            padding: 0;
+            margin: 0;
+            max-height: 35px;
+        }
+        /*--------------------------------------------------------------
+# Book a table button Menu
+--------------------------------------------------------------*/
+        
+        .book-a-table-btn {
+            background-image: radial-gradient( 100% 100% at 100% 0, var(--buttonGradient1) 0, var(--buttonGradient2) 100%);
+            color: #fff;
+            border-radius: 50px;
+            margin: 0 0 0 20px;
+            padding: 10px 25px;
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        
+        .book-a-table-btn:hover {
+            background-image: radial-gradient( 100% 100% at 100% 0, var(--buttonGradient1) 0, var(--buttonGradient2) 100%);
+            color: #fff;
+        }
+        
+        @media (max-width: 992px) {
+            .book-a-table-btn {
+                margin: 0 15px 0 0;
+                padding: 8px 20px;
+                letter-spacing: 1px;
+            }
+        }
+        /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+        /**
+* Desktop Navigation 
+*/
+        
+        .navbar {
+            padding: 0;
+        }
+        
+        .navbar ul {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .navbar li {
+            position: relative;
+        }
+        
+        .navbar a,
+        .navbar a:focus {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px 10px 24px;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--textSecondary);
+            white-space: nowrap;
+            transition: 0.3s;
+        }
+        
+        .navbar a .DropIcon,
+        .navbar a:focus .DropIcon {
+            font-size: 10px;
+            line-height: 0;
+            margin-left: 5px;
+        }
+        
+        .navbar a .Icons,
+        .navbar a:focus .Icons {
+            font-size: 20px;
+            line-height: 0;
+            margin-right: 8px;
+        }
+        
+        .navbar a:hover,
+        .navbar .active,
+        .navbar .active:focus,
+        .navbar li:hover>a {
+            color: var(--backgroundColor);
+        }
+        
+        .navbar .dropdown ul {
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: calc(100% + 30px);
+            margin: 3px;
+            padding: 10px 0;
+            z-index: 99;
+            opacity: 0;
+            visibility: hidden;
+            background: #fff;
+            /* box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25); */
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+        
+        .navbar .dropdown ul li {
+            min-width: 200px;
+        }
+        
+        .navbar .dropdown ul a {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #433f39;
+        }
+        
+        .navbar .dropdown ul a i {
+            font-size: 13px;
+        }
+        
+        .navbar .dropdown ul a:hover,
+        .navbar .dropdown ul .active,
+        .navbar .dropdown ul li:hover>a {
+            color: white;
+            background-color: var(--backgroundHover);
+        }
+        
+        .navbar .dropdown ul .active,
+        .navbar .dropdown ul .active:hover {
+            color: white;
+            background-color: var(--backgroundColor);
+        }
+        
+        .navbar .dropdown:hover>ul {
+            opacity: 1;
+            top: 100%;
+            visibility: visible;
+        }
+        
+        .navbar .dropdown .dropdown ul {
+            top: 0;
+            left: calc(100% - 30px);
+            visibility: hidden;
+        }
+        
+        .navbar .dropdown .dropdown:hover>ul {
+            opacity: 1;
+            top: 0;
+            left: 100%;
+            visibility: visible;
+        }
+        
+        @media (max-width: 1366px) {
+            .navbar .dropdown .dropdown ul {
+                left: -90%;
+            }
+            .navbar .dropdown .dropdown:hover>ul {
+                left: -100%;
+            }
+        }
+        /**
+* Mobile Navigation 
+*/
+        
+        .mobile-nav-toggle {
+            color: #fff;
+            font-size: 28px;
+            cursor: pointer;
+            display: none;
+            line-height: 0;
+            transition: 0.5s;
+        }
+        
+        @media (max-width: 991px) {
+            .mobile-nav-toggle {
+                display: block;
+            }
+            .navbar ul {
+                display: none;
+            }
+        }
+        
+        .navbar-mobile {
+            position: fixed;
+            overflow: hidden;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: rgba(39, 37, 34, 0.9);
+            transition: 0.3s;
+            z-index: 0;
+        }
+        
+        .navbar-mobile .mobile-nav-toggle {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+        }
+        
+        .navbar-mobile ul {
+            display: block;
+            position: absolute;
+            top: 55px;
+            right: 15px;
+            bottom: 15px;
+            left: 15px;
+            padding: 10px 0;
+            border-radius: 8px;
+            background-color: #fff;
+            overflow-y: auto;
+            transition: 0.3s;
+        }
+        
+        .navbar-mobile a,
+        .navbar-mobile a:focus {
+            padding: 10px 20px;
+            font-size: 15px;
+            color: #433f39;
+        }
+        
+        .navbar-mobile a:hover,
+        .navbar-mobile .active,
+        .navbar-mobile li:hover>a {
+            color: #ffb03b;
+        }
+        
+        .navbar-mobile .getstarted,
+        .navbar-mobile .getstarted:focus {
+            margin: 15px;
+        }
+        
+        .navbar-mobile .dropdown ul {
+            position: static;
+            display: none;
+            margin: 10px 20px;
+            padding: 10px 0;
+            z-index: 99;
+            opacity: 1;
+            visibility: visible;
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        }
+        
+        .navbar-mobile .dropdown ul li {
+            min-width: 200px;
+        }
+        
+        .navbar-mobile .dropdown ul a {
+            padding: 10px 20px;
+        }
+        
+        .navbar-mobile .dropdown ul a i {
+            font-size: 12px;
+        }
+        
+        .navbar-mobile .dropdown ul a:hover,
+        .navbar-mobile .dropdown ul .active:hover,
+        .navbar-mobile .dropdown ul li:hover>a {
+            color: #ffb03b;
+        }
+        
+        .navbar-mobile .dropdown>.dropdown-active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+        <div class="container-fluid container-fluid d-flex align-items-center ">
+
+            <div class="logo me-4 d-flex">
+                <a href="Dashboard.php"><img src="../IMAGES/TravelNew.jpg" alt="" class="img-fluid me-2"></a>
+                <h1><a href="Dashboard.php">TRAVEL APP</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+
+            </div>
+
+            <nav id="navbar" class="navbar order-lg-0 me-auto">
+                <ul>
+
+                    <li class="dropdown"><a href="#" class="<?= ($NewTitle == 'CustomerMaster' || $NewTitle == 'CountryMaster' || $NewTitle == 'ChecklistMaster' || $NewTitle == 'AgencyMaster') ? " active " : " " ?>"><i class="bi bi-plus-circle-fill Icons"></i><span>Masters</span> <i class="bi bi-chevron-down DropIcon"></i></a>
+                        <ul>
+                            <li><a href="./CustomerMaster.php" class="<?= ($NewTitle == 'CustomerMaster') ? " active " : " " ?>">Customer</a></li>
+                            <li><a href="./CountryMaster.php" class="<?= ($NewTitle == 'CountryMaster') ? " active " : " " ?>">Country</a></li>
+                            <li><a href="./ChecklistMaster.php" class="<?= ($NewTitle == 'ChecklistMaster') ? " active " : " " ?>">Checklist</a></li>
+                            <li><a href="./SupplierMaster.php" class="<?= ($NewTitle == 'AgencyMaster') ? " active " : " " ?>">Agency</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="<?= ($NewTitle == 'PrimaryAccountGroup' || $NewTitle == 'AccountGroup' || $NewTitle == 'ReceiptVoucher' || $NewTitle == 'PaymentVoucher' || $NewTitle == 'LedgerBook' || $NewTitle == 'LedgerMaster') ? " active
+                            " : " " ?>"><i class="bi bi-piggy-bank-fill Icons"></i><span>Accounts</span> <i class="bi bi-chevron-down DropIcon"></i></a>
+                        <ul>
+                            <li><a href="./ReceiptVoucher.php" class="<?= ($NewTitle == 'ReceiptVoucher') ? " active " : " " ?>">Receipt Voucher</a></li>
+                            <li><a href="./PaymentVoucher.php" class="<?= ($NewTitle == 'PaymentVoucher') ? " active " : " " ?>">Payment Voucher</a></li>
+                            <li><a href="./LedgerBook.php" class="<?= ($NewTitle == 'LedgerBook') ? " active " : " " ?>">Ledger Book</a></li>
+                            <li><a href="./PortalAdd.php" class="<?= ($NewTitle == 'PortalRecharge') ? " active " : " " ?>">PortalRecharge</a></li>
+                            <li><a href="./PrimaryAccountGroup.php" class="<?= ($NewTitle == 'PrimaryAccountGroup') ? " active " : " " ?>">Primary group</a></li>
+                            <li><a href="./AccountGroup.php" class="<?= ($NewTitle == 'AccountGroup') ? " active " : " " ?>">Account Group</a></li>
+                            <li><a href="./LedgerMaster.php" class="<?= ($NewTitle == 'LedgerMaster') ? " active " : " " ?>">Ledger</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="<?= ($NewTitle == 'VisaBooking' || $NewTitle == 'TicketBooking') ? " active " : " " ?>"><i class="bi bi-airplane-fill Icons"></i><span>Booking</span> <i class="bi bi-chevron-down DropIcon"></i></a>
+                        <ul>
+                            <li><a href="./VisaBooking.php" class="<?= ($NewTitle == 'VisaBooking') ? " active " : " " ?>">Visa Booking</a></li>
+                            <li><a href="./TicketBooking.php" class="<?= ($NewTitle == 'TicketBooking') ? " active " : " " ?>">Ticket Booking</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="#" class="<?= ($NewTitle == 'VoucherReport' || $NewTitle == 'TicketBookingReport' || $NewTitle == 'ViewVisa' || $NewTitle == 'DayReport') ? " active " : " " ?>"><i class="bi bi-clipboard-data-fill Icons"></i><span>Reports</span> <i class="bi bi-chevron-down DropIcon"></i></a>
+                        <ul>
+                            <li><a href="./VoucherReport.php" class="<?= ($NewTitle == 'VoucherReport') ? " active " : " " ?>">Voucher Report</a></li>
+                            <li><a href="./TicketBookingReport.php" class="<?= ($NewTitle == 'TicketBookingReport') ? " active " : " " ?>">Ticket Report</a></li>
+                            <li><a href="./ViewVisa.php" class="<?= ($NewTitle == 'ViewVisa') ? " active " : " " ?>">Visa Report</a></li>
+                            <li><a href="./DayReport.php" class="<?= ($NewTitle == 'DayReport') ? " active " : " " ?>">Day Report</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li>
+                                <a href="#">
+                                    <div class=" d-flex justify-content-between">
+                                        <div class="me-3">
+                                            <h6> <strong>Title</strong> </h6>
+                                            <p>Title description jkdhfwiugccwgcwc </p>
+                                        </div>
+                                        <div class="ms-2">
+                                            <p> <strong>12 Aug 2023</strong></p>
+                                            <p class="text-end "> + 8 Days </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+            <!-- .navbar -->
+
+            <a href="../signout.php" class="book-a-table-btn">Log Out</a>
+
+        </div>
+    </header>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+
+.main_card{
+    border-radius: 30px;
+    background: url("./image/maincard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fullScreen {
+    width: 100%;
+    height: 120vh;
+    background: url("./image/fullscreen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: #f7ecaf; */
+}
+
+.heading {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS';
+    color: rgb(46, 110, 239);
+    padding-left: 15px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+}
+h2 {
+    font-family: 'Trebuchet MS';
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: -2px -2px 4px rgb(0, 0, 0);
+    padding-top: 20px;
+}
+h3{
+    font-family: 'Trebuchet MS';
+    font-size: 30px;
+    color: #1d65ca;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px rgb(70, 77, 77);
+}
+h4{
+    font-family: 'Brush Script MT';
+    font-size: 28px;
+    padding-top: 5px;
+}
+
+.d-flex {
+    margin-top: 5px;
+    border-radius: 20px; 
+}
+
+.navbar {
+    background-image: url("./image/navimg.jpg");
+    /* background-color: white; */ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 12vh;
+    border-radius: 0px 0px 30px 30px;
+}
+/* .searchBtn{
+    margin-top: 20px;
+    margin-right: 25px;
+}
+.searchBtn i{
+    position: absolute;
+    margin: 6px;
+}
+.searchBtn .newsearch{ 
+    border-radius: 10px;
+    width: 160px;
+    height: 35px; 
+}
+.newsearch::placeholder{
+    padding-left: 20px;
+} */
+
+.mainHead {
+    text-align: center;
+    font-family: Arial;
+    /* padding-left: 140px; */
+}
+
+.table {
+    background-color: white;
+    border-radius: 20px;
+}
+
+.glow-button {
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 30px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    height: 45px;
+    width: 150px;
+    transition: all .15s;
+    font-size: 18px;
+}
+.AddBtn {
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 30px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin: 0 5px 8px 0;
+}
+
+.AddBtn:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.AddBtn:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.AddBtn:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.textField {
+    border: 2px solid blue;
+    width: 470px;
+    border-radius: 5px;
+    margin-top: 8px;
+    height: 40px;
+}
+
+.btn-info {
+    margin: 10px;
+    padding: 12px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 30px;
+    display: block;
+    border: 0px;
+    font-weight: 800;
+    font-family: 'Lucida Sans';
+    box-shadow: 0px 0px 14px -7px #778c95;
+    background-image: linear-gradient(45deg, #262b3c 0%, #5da5c9 51%, #262b3c 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 30px 20px;
+}
+
+.btn-info:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-info:active {
+    transform: scale(0.95);
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 26px;
+    padding-top: 15px;
+    text-shadow: 2px 2px 2px #262b3c;
+}
+
+.modal-body {
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    padding-top: 30px;
+}
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.ri-edit-line {
+    padding-left: 8px;
+}
+
+.ri-delete-bin-5-line {
+    padding-left: 20px;
+}
+
+/* .form-select {
+    border: 2px solid blue;
+    width: 470px;
+    border-radius: 5px;
+    margin-top: 8px;
+    height: 40px;
+    padding-bottom: 10px;
+} */
+
+.modal-content {
+    background-color: rgb(223, 245, 254);
+    border-radius: 30px;
+    background: url("./image/travelbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.saveBtn{
+    /* margin: 50px; */
+    padding: 10px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 30px;
+    font-size: 20px;
+    border: 0px;
+    font-weight: 800;
+    font-family: 'Lucida Sans';
+    box-shadow: -3px 4px 5px grey;
+    background-image: linear-gradient(45deg, rgb(233, 183, 20) 0%, rgb(247, 37, 37) 51%, rgb(232, 95, 118) 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 30px 20px;
+    
+}
+
+.saveBtn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.saveBtn:active {
+    transform: scale(0.95);
+}
+/************************************Customer********************************/
+
+.custmodalHead{
+    color: white;
+    /* background: url("./image/bookbg.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.custmodalBg{
+    background: url("./image/bookbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/************************************Country********************************/
+
+.cntrymodalbg{
+    background: url("./image/travelbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/************************************Ledger********************************/
+
+
+.ledgerBg{
+    background: url("./image/flight.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ledgrmodalHead{
+    color: rgb(51, 51, 183);
+    text-shadow: 2px 2px 4px grey;
+}
+
+
+/************************************Checklist********************************/
+
+.chkListbg{
+    background: url("./image/checkbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/************************************Ticket Booking********************************/
+
+.tktBook{
+    background: url("./image/ticketbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rupStyle{
+    width: 20px;
+    height: 20px;
+}
+
+/************************************Visa Booking********************************/
+
+.arrowStyle{
+    margin-top: 35px;
+    padding-left: 84px;
+}
+.TktcommonFont{
+    color: #0b1980;
+    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    font-size: 20px;
+}
+
+/************************************Supplier Booking********************************/
+
+.supplierbg{
+    background: url("./image/supplierbg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
